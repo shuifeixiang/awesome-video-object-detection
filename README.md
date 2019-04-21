@@ -24,11 +24,13 @@ This is a list of awesome articles about object detection from video.
 
 ## Paper list
 * Note：
-** 1.  CUHK: Xiaogang Wang： Temporal CNN, rescore
-** 2.  MSRA: Jifeng Dai: Deep feature flow, optical flow, FGFA(Flow Guided Feature Aggregation)
-** 3.  seq nms
-** 4.  Spatiotemporal Sampling Network(STSN) 
-** 5.  Spatial-Temporal Memory Networks(STMN)
+1.  CUHK: Xiaogang Wang： Temporal CNN, rescore
+2.  MSRA: Jifeng Dai: Deep feature flow, optical flow, FGFA(Flow Guided Feature Aggregation)
+3.  seq nms
+4.  Spatiotemporal Sampling Network(STSN) 
+5.  Spatial-Temporal Memory Networks(STMN)
+6.  Fully Motion-Aware Network(MAnet)
+
 ### 2016
 
 #### Seq-NMS for Video Object Detection
@@ -39,21 +41,20 @@ This is a list of awesome articles about object detection from video.
 - **Motivation**: Smoothing the final bounding box predictions across time.
 - **Summary**:  Constructing a temporal graph from overlapping bounding box detections across the adjacent frames, and using dynamic programming to select bounding box sequences with the highest overall detection score.
 
-#### **Xiaogang Wang** T-CNN: Tubelets with Convolutional Neural Networks for Object Detection from Videos
+#### (Xiaogang Wang) T-CNN: Tubelets with Convolutional Neural Networks for Object Detection from Videos
 
 [[Arxiv]](https://arxiv.org/abs/1604.02532) [[Code]](https://github.com/myfavouritekk/T-CNN)
 
 - **Date**: Apr 2016
 - **Summary**:  Using a video object detection pipeline that involves predicting optical flow first, then propagating image level predictions according to the flow, and finally using a tracking algorithm to select temporally consistent high confidence detections.
 - **Performance**: 73.8% mAP on ImageNet VID validation.
-
-#### **Xiaogang Wang** Object Detection from Video Tubelets with Convolutional Neural Networks
+#### (Xiaogang Wang) Object Detection from Video Tubelets with Convolutional Neural Networks
 
 [[Arxiv]](https://arxiv.org/abs/1604.04053) [[Code]](https://github.com/myfavouritekk/vdetlib)
 
 - **Date**: Apr 2016
 
-#### **Jifeng Dai** Deep Feature Flow for Video Recognition
+#### (Jifeng Dai) Deep Feature Flow for Video Recognition
 
 [[Arxiv]](https://arxiv.org/abs/1611.07715) [[Code]](https://github.com/msracver/Deep-Feature-Flow)
 
@@ -62,13 +63,13 @@ This is a list of awesome articles about object detection from video.
 
 ### 2017
 
-#### **Xiaogang Wang** Object Detection in Videos with Tubelet Proposal Networks
+#### (Xiaogang Wang) Object Detection in Videos with Tubelet Proposal Networks
 
 [[Arxiv]](https://arxiv.org/abs/1702.06355)
 
 - **Date**: Feb 2017
 
-#### **Jifeng Dai** Flow-Guided Feature Aggregation for Video Object Detection
+#### (Jifeng Dai) Flow-Guided Feature Aggregation for Video Object Detection
 
 [[Arxiv]](https://arxiv.org/abs/1703.10025) [[Code]](https://github.com/msracver/Flow-Guided-Feature-Aggregation)
 
@@ -85,7 +86,7 @@ This is a list of awesome articles about object detection from video.
 - **Summary**: Proposing a ConvNet architecture that solves detection and tracking problems jointly and applying a Viterbi algorithm to link the detections across time.
 - **Performance**: 79.8% mAP on ImageNet VID validation.
 
-#### **Jifeng Dai** Towards High Performance Video Object Detection
+#### (Jifeng Dai) Towards High Performance Video Object Detection
 
 [[Arxiv]](https://arxiv.org/abs/1711.11577)
 
@@ -93,7 +94,7 @@ This is a list of awesome articles about object detection from video.
 - **Motivation**: Producing powerful spatiotemporal features.
 - **Performance**: 78.6% mAP on ImageNet VID validation at 13 fps on a Titan X GPU.
 
-#### ##STMN** Video Object Detection with an Aligned Spatial-Temporal Memory
+#### (STMN Video Object Detection with an Aligned Spatial-Temporal Memory
 
 [[Arxiv]](https://arxiv.org/abs/1712.06317) [[Summary]](https://github.com/ZHANGHeng19931123/awesome-video-object-detection/blob/master/STMN.md) [[Code]](http://fanyix.cs.ucdavis.edu/project/stmn/project.html) [[Demo]](https://www.youtube.com/watch?v=Vs3LqY1s9GY)
 
@@ -109,7 +110,7 @@ This is a list of awesome articles about object detection from video.
 
 - **Date**: Jan 2018
 
-#### **Jifeng Dai** Towards High Performance Video Object Detection for Mobiles 
+#### (Jifeng Dai) Towards High Performance Video Object Detection for Mobiles 
 
 [[Arxiv]](https://arxiv.org/abs/1804.05830)
 
@@ -124,7 +125,7 @@ This is a list of awesome articles about object detection from video.
 - **Date**: Apr 2018
 - **Performance**: 79.4% mAP at 20 fps or 79.0% at 62 fps on ImageNet VID validation on a Titan X GPU.
 
-#### **STSN** Object Detection in Video with Spatiotemporal Sampling Networks
+#### (STSN) Object Detection in Video with Spatiotemporal Sampling Networks
 
 [[Arxiv]](https://arxiv.org/abs/1803.05549) [[Summary]](https://github.com/ZHANGHeng19931123/awesome-video-object-detection/blob/master/STSN.md)
 
@@ -132,7 +133,7 @@ This is a list of awesome articles about object detection from video.
 - **Motivation**: Producing powerful spatiotemporal features.
 - **Performance**: 78.9% mAP or 80.4% (combined with [Seq-NMS](https://arxiv.org/abs/1602.08465)) on ImageNet VID validation.
 
-#### **STSN** Fully Motion-Aware Network for Video Object Detection
+#### (MAnet) Fully Motion-Aware Network for Video Object Detection
 
 [[Paper]](http://openaccess.thecvf.com/content_ECCV_2018/html/Shiyao_Wang_Fully_Motion-Aware_Network_ECCV_2018_paper.html) [[Summary]](https://github.com/ZHANGHeng19931123/awesome-video-object-detection/blob/master/MANet.md)
 
